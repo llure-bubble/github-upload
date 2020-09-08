@@ -85,7 +85,8 @@
 														<div class="elementor-widget-container">
 															<div class="elementor-text-editor elementor-clearfix">
 																<h3><?php _e( 'Download our catalog', 'phami-child' ); ?></h3>
-																<p><?php _e( 'Here you can find all the information available in our catalog', 'phami-child' ); ?></p></div>
+																<p><?php _e( 'Here you can find all the information available in our catalog', 'phami-child' ); ?></p>
+															</div>
 														</div>
 													</div>
 													<div class="elementor-element elementor-element-8dcbc76 elementor-button-info elementor-widget elementor-widget-button" data-id="8dcbc76" data-element_type="widget" data-widget_type="button.default">
