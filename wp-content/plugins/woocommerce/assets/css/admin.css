@@ -850,6 +850,7 @@ ul.wc_coupon_list_block {
     content: "";
     line-height: 28px; }
 
+#woocommerce-order-data .postbox-header,
 #woocommerce-order-data .hndle,
 #woocommerce-order-data .handlediv {
   display: none; }
@@ -1101,6 +1102,8 @@ ul.wc_coupon_list_block {
       float: right; }
   #woocommerce-order-items .wc-order-totals .refunded-total {
     color: #a00; }
+  #woocommerce-order-items .wc-order-totals .label-highlight {
+    font-weight: bold; }
 #woocommerce-order-items .refund-actions {
   margin-top: 5px;
   padding-top: 12px;
@@ -1128,6 +1131,7 @@ ul.wc_coupon_list_block {
 
 #woocommerce-order-items .inside {
   display: block !important; }
+#woocommerce-order-items .postbox-header,
 #woocommerce-order-items .hndle,
 #woocommerce-order-items .handlediv {
   display: none; }
@@ -3783,12 +3787,11 @@ img.help_tip {
   padding: 10px; }
   #woocommerce-product-data .hndle span {
     display: block;
-    vertical-align: middle;
     line-height: 24px; }
-    #woocommerce-product-data .hndle span span {
-      display: inline;
-      line-height: inherit;
-      vertical-align: baseline; }
+  #woocommerce-product-data .hndle .type_box {
+    display: inline;
+    line-height: inherit;
+    vertical-align: baseline; }
   #woocommerce-product-data .hndle select {
     margin: 0; }
   #woocommerce-product-data .hndle label {
@@ -5290,6 +5293,12 @@ table.bar_chart {
   .post-type-shop_order .woocommerce-BlankState .woocommerce-BlankState-buttons {
     margin-bottom: 4em; }
 
+.post-type-product #wp-pointer-2 .wp-pointer-arrow {
+  left: 240px; }
+.post-type-product #wp-pointer-3 .wp-pointer-arrow,
+.post-type-product #wp-pointer-4 .wp-pointer-arrow {
+  left: 46%; }
+
 /**
   * Small screen optimisation
   */
@@ -5635,7 +5644,8 @@ table.bar_chart {
       display: none; }
 .select2-container .select2-selection__clear {
   color: #999;
-  margin-top: -1px; }
+  margin-top: -1px;
+  z-index: 1; }
 .select2-container .select2-search--inline .select2-search__field {
   font-family: inherit;
   font-size: inherit;
@@ -5688,7 +5698,7 @@ table.bar_chart {
   .wc-wp-version-gte-53 .select2-container .select2-selection--single .select2-selection__arrow {
     right: 1px;
     height: 28px;
-    width: 28px;
+    width: 23px;
     background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M5%206l5%205%205-5%202%201-7%207-7-7%202-1z%22%20fill%3D%22%23555%22%2F%3E%3C%2Fsvg%3E") no-repeat right 5px top 55%;
     background-size: 16px 16px; }
     @media only screen and (max-width: 782px) {
@@ -5709,6 +5719,14 @@ table.bar_chart {
 @media only screen and (max-width: 782px) {
   .wc-wp-version-gte-53 .woocommerce table.form-table .select2-container {
     min-width: 100% !important; } }
+
+.wc-wp-version-gte-55 #woocommerce-product-data .hndle {
+  display: block;
+  line-height: 24px; }
+  .wc-wp-version-gte-55 #woocommerce-product-data .hndle .type_box {
+    display: inline;
+    line-height: inherit;
+    vertical-align: baseline; }
 
 /**
   * Select2 colors for built-in admin color themes.
@@ -6892,3 +6910,7 @@ table.bar_chart {
 .wc-pointer .wc-pointer-buttons .close {
   float: left;
   margin: 6px 0 0 15px; }
+
+.wc-quick-edit-warning {
+  color: darkred;
+  font-weight: bold; }

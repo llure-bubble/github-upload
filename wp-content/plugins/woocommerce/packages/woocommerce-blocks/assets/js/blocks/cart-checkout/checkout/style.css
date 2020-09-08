@@ -11,7 +11,7 @@ Error: Undefined variable: "$gap".
 8: }
 9: 
 10: .wc-block-checkout__shipping-option {
-11: 	.wc-block-shipping-rates-control__package:not(:first-of-type) {
+11: 	.wc-block-components-shipping-rates-control__package:not(:first-of-type) {
 12: 		margin-top: $gap-larger;
 
 Backtrace:
@@ -61,4 +61,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$gap\".\A         on line 7 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/blocks/cart-checkout/checkout/style.scss\A \A 2: 	top: -96px;\A 3: }\A 4: \A 5: .wc-block-checkout__add-note,\A 6: .wc-block-checkout__keep-updated {\A 7: 	margin-top: $gap;\A 8: }\A 9: \A 10: .wc-block-checkout__shipping-option {\A 11: 	.wc-block-shipping-rates-control__package:not(:first-of-type) {\A 12: 		margin-top: $gap-larger;"; }
+  content: "Error: Undefined variable: \"$gap\".\A         on line 7 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/blocks/cart-checkout/checkout/style.scss\A \A 2: 	top: -96px;\A 3: }\A 4: \A 5: .wc-block-checkout__add-note,\A 6: .wc-block-checkout__keep-updated {\A 7: 	margin-top: $gap;\A 8: }\A 9: \A 10: .wc-block-checkout__shipping-option {\A 11: 	.wc-block-components-shipping-rates-control__package:not(:first-of-type) {\A 12: 		margin-top: $gap-larger;"; }

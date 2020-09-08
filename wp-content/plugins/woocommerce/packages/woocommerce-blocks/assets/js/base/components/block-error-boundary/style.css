@@ -2,7 +2,7 @@
 Error: Undefined variable: "$gap-larger".
         on line 5 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/block-error-boundary/style.scss
 
-1: .wc-block-error {
+1: .wc-block-components-error {
 2: 	display: flex;
 3: 	background-color: #f3f3f4;
 4: 	border-left: 4px solid #6d6d6d;
@@ -64,4 +64,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$gap-larger\".\A         on line 5 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/block-error-boundary/style.scss\A \A 1: .wc-block-error {\A 2: 	display: flex;\A 3: 	background-color: #f3f3f4;\A 4: 	border-left: 4px solid #6d6d6d;\A 5: 	padding: $gap-larger $gap;\A 6: 	align-items: center;\A 7: 	justify-content: center;\A 8: 	flex-direction: column;\A 9: }\A 10: "; }
+  content: "Error: Undefined variable: \"$gap-larger\".\A         on line 5 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/block-error-boundary/style.scss\A \A 1: .wc-block-components-error {\A 2: 	display: flex;\A 3: 	background-color: #f3f3f4;\A 4: 	border-left: 4px solid #6d6d6d;\A 5: 	padding: $gap-larger $gap;\A 6: 	align-items: center;\A 7: 	justify-content: center;\A 8: 	flex-direction: column;\A 9: }\A 10: "; }

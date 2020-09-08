@@ -7,9 +7,9 @@ Error: Undefined mixin 'link-button'.
 2: 	@include link-button();
 3: }
 4: 
-5: // These styles are for the server side rendered product grid blocks.
-6: .wc-block-grid__products .wc-block-grid__product-image {
-7: 	text-decoration: none;
+5: .wc-block-suspense-placeholder {
+6: 	@include placeholder();
+7: 	@include force-content();
 
 Backtrace:
 /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/css/style.scss:2:in `link-button'
@@ -61,4 +61,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'link-button'.\A         on line 2 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/css/style.scss, in `link-button'\A         from line 2 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/css/style.scss\A \A 1: .wc-block-link-button {\A 2: 	@include link-button();\A 3: }\A 4: \A 5: // These styles are for the server side rendered product grid blocks.\A 6: .wc-block-grid__products .wc-block-grid__product-image {\A 7: 	text-decoration: none;"; }
+  content: "Error: Undefined mixin 'link-button'.\A         on line 2 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/css/style.scss, in `link-button'\A         from line 2 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/css/style.scss\A \A 1: .wc-block-link-button {\A 2: 	@include link-button();\A 3: }\A 4: \A 5: .wc-block-suspense-placeholder {\A 6: 	@include placeholder();\A 7: 	@include force-content();"; }

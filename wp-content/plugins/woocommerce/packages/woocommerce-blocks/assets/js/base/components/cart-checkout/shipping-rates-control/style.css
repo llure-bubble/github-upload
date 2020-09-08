@@ -7,13 +7,13 @@ Error: Undefined mixin 'font-size'.
 4: 	}
 5: }
 6: 
-7: .wc-block-shipping-rates-control__package-items {
+7: .wc-block-components-shipping-rates-control__package-items {
 8: 	@include font-size(small);
-9: 	color: $core-grey-dark-400;
-10: 	display: block;
-11: 	list-style: none;
-12: 	margin: 0;
-13: 	padding: 0;
+9: 	display: block;
+10: 	list-style: none;
+11: 	margin: 0;
+12: 	padding: 0;
+13: }
 
 Backtrace:
 /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/shipping-rates-control/style.scss:8:in `font-size'
@@ -65,4 +65,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'font-size'.\A         on line 8 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/shipping-rates-control/style.scss, in `font-size'\A         from line 8 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/shipping-rates-control/style.scss\A \A 3: 		margin: 0;\A 4: 	}\A 5: }\A 6: \A 7: .wc-block-shipping-rates-control__package-items {\A 8: 	@include font-size(small);\A 9: 	color: $core-grey-dark-400;\A 10: 	display: block;\A 11: 	list-style: none;\A 12: 	margin: 0;\A 13: 	padding: 0;"; }
+  content: "Error: Undefined mixin 'font-size'.\A         on line 8 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/shipping-rates-control/style.scss, in `font-size'\A         from line 8 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/shipping-rates-control/style.scss\A \A 3: 		margin: 0;\A 4: 	}\A 5: }\A 6: \A 7: .wc-block-components-shipping-rates-control__package-items {\A 8: 	@include font-size(small);\A 9: 	display: block;\A 10: 	list-style: none;\A 11: 	margin: 0;\A 12: 	padding: 0;\A 13: }"; }

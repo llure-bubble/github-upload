@@ -1,7 +1,7 @@
 /*
 Error: Undefined mixin 'font-size'.
-        on line 3 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/upgrade/woocommerce.4.3.1-FZb6zY/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/policies/style.scss, in `font-size'
-        from line 3 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/upgrade/woocommerce.4.3.1-FZb6zY/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/policies/style.scss
+        on line 3 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/policies/style.scss, in `font-size'
+        from line 3 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/policies/style.scss
 
 1: .editor-styles-wrapper .wc-block-components-checkout-policies,
 2: .wc-block-components-checkout-policies {
@@ -13,8 +13,8 @@ Error: Undefined mixin 'font-size'.
 8: }
 
 Backtrace:
-/Users/BUBBLE07/Sites/www.healthy.local/wp-content/upgrade/woocommerce.4.3.1-FZb6zY/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/policies/style.scss:3:in `font-size'
-/Users/BUBBLE07/Sites/www.healthy.local/wp-content/upgrade/woocommerce.4.3.1-FZb6zY/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/policies/style.scss:3
+/Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/policies/style.scss:3:in `font-size'
+/Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/policies/style.scss:3
 /Applications/Adobe Dreamweaver 2020/Adobe Dreamweaver 2020.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:348:in `block in visit_mixin'
 /Applications/Adobe Dreamweaver 2020/Adobe Dreamweaver 2020.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/stack.rb:98:in `block in with_mixin'
 /Applications/Adobe Dreamweaver 2020/Adobe Dreamweaver 2020.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
@@ -62,4 +62,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'font-size'.\A         on line 3 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/upgrade/woocommerce.4.3.1-FZb6zY/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/policies/style.scss, in `font-size'\A         from line 3 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/upgrade/woocommerce.4.3.1-FZb6zY/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/policies/style.scss\A \A 1: .editor-styles-wrapper .wc-block-components-checkout-policies,\A 2: .wc-block-components-checkout-policies {\A 3: 	@include font-size(smaller);\A 4: 	text-align: center;\A 5: 	list-style: none outside;\A 6: 	line-height: 1;\A 7: 	margin: $gap-large 0;\A 8: }"; }
+  content: "Error: Undefined mixin 'font-size'.\A         on line 3 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/policies/style.scss, in `font-size'\A         from line 3 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/policies/style.scss\A \A 1: .editor-styles-wrapper .wc-block-components-checkout-policies,\A 2: .wc-block-components-checkout-policies {\A 3: 	@include font-size(smaller);\A 4: 	text-align: center;\A 5: 	list-style: none outside;\A 6: 	line-height: 1;\A 7: 	margin: $gap-large 0;\A 8: }"; }

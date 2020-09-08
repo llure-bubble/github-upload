@@ -3,7 +3,7 @@ Error: Undefined mixin 'font-size'.
         on line 2 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/product-name/style.scss, in `font-size'
         from line 2 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/product-name/style.scss
 
-1: .wc-block-product-name {
+1: .wc-block-components-product-name {
 2: 	@include font-size(regular);
 3: 	@include wrap-break-word();
 4: 	display: block;
@@ -60,4 +60,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'font-size'.\A         on line 2 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/product-name/style.scss, in `font-size'\A         from line 2 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/product-name/style.scss\A \A 1: .wc-block-product-name {\A 2: 	@include font-size(regular);\A 3: 	@include wrap-break-word();\A 4: 	display: block;\A 5: 	max-width: max-content;\A 6: }"; }
+  content: "Error: Undefined mixin 'font-size'.\A         on line 2 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/product-name/style.scss, in `font-size'\A         from line 2 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/product-name/style.scss\A \A 1: .wc-block-components-product-name {\A 2: 	@include font-size(regular);\A 3: 	@include wrap-break-word();\A 4: 	display: block;\A 5: 	max-width: max-content;\A 6: }"; }

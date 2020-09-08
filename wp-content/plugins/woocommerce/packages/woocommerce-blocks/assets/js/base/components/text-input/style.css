@@ -2,7 +2,7 @@
 Error: Undefined variable: "$gap-large".
         on line 3 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/text-input/style.scss
 
-1: .wc-block-text-input {
+1: .wc-block-components-text-input {
 2: 	position: relative;
 3: 	margin-bottom: em($gap-large);
 4: 	white-space: nowrap;
@@ -66,4 +66,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$gap-large\".\A         on line 3 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/text-input/style.scss\A \A 1: .wc-block-text-input {\A 2: 	position: relative;\A 3: 	margin-bottom: em($gap-large);\A 4: 	white-space: nowrap;\A 5: \A 6: 	label {\A 7: 		@include reset-typography();\A 8: 		@include font-size(regular);"; }
+  content: "Error: Undefined variable: \"$gap-large\".\A         on line 3 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/text-input/style.scss\A \A 1: .wc-block-components-text-input {\A 2: 	position: relative;\A 3: 	margin-bottom: em($gap-large);\A 4: 	white-space: nowrap;\A 5: \A 6: 	label {\A 7: 		@include reset-typography();\A 8: 		@include font-size(regular);"; }

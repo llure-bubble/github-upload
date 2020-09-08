@@ -2,12 +2,12 @@
 Error: Undefined variable: "$gap".
         on line 2 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/pagination/style.scss
 
-1: .wc-block-pagination {
+1: .wc-block-components-pagination {
 2: 	margin: 0 auto $gap;
 3: }
 4: 
-5: .wc-block-pagination-page,
-6: .wc-block-pagination-ellipsis {
+5: .wc-block-components-pagination__page,
+6: .wc-block-components-pagination__ellipsis {
 7: 	@include font-size(regular);
 
 Backtrace:
@@ -61,4 +61,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$gap\".\A         on line 2 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/pagination/style.scss\A \A 1: .wc-block-pagination {\A 2: 	margin: 0 auto $gap;\A 3: }\A 4: \A 5: .wc-block-pagination-page,\A 6: .wc-block-pagination-ellipsis {\A 7: 	@include font-size(regular);"; }
+  content: "Error: Undefined variable: \"$gap\".\A         on line 2 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/pagination/style.scss\A \A 1: .wc-block-components-pagination {\A 2: 	margin: 0 auto $gap;\A 3: }\A 4: \A 5: .wc-block-components-pagination__page,\A 6: .wc-block-components-pagination__ellipsis {\A 7: 	@include font-size(regular);"; }

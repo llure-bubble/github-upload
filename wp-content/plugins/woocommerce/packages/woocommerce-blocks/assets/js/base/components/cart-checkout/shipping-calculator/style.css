@@ -1,17 +1,17 @@
 /*
 Error: Undefined variable: "$gap-smaller".
-        on line 10 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/upgrade/woocommerce.4.3.1-FZb6zY/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/shipping-calculator/style.scss
+        on line 10 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/shipping-calculator/style.scss
 
-5: .wc-block-shipping-calculator-address__button {
+5: .wc-block-components-shipping-calculator-address__button {
 6: 	width: 100%;
 7: }
 8: 
-9: .wc-block-cart__shipping-calculator {
+9: .wc-block-components-shipping-calculator {
 10: 	padding: em($gap-smaller) 0 em($gap-small);
 11: }
 
 Backtrace:
-/Users/BUBBLE07/Sites/www.healthy.local/wp-content/upgrade/woocommerce.4.3.1-FZb6zY/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/shipping-calculator/style.scss:10
+/Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/shipping-calculator/style.scss:10
 /Applications/Adobe Dreamweaver 2020/Adobe Dreamweaver 2020.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Applications/Adobe Dreamweaver 2020/Adobe Dreamweaver 2020.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
 /Applications/Adobe Dreamweaver 2020/Adobe Dreamweaver 2020.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/script/tree/funcall.rb:182:in `perform_arg'
@@ -69,4 +69,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$gap-smaller\".\A         on line 10 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/upgrade/woocommerce.4.3.1-FZb6zY/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/shipping-calculator/style.scss\A \A 5: .wc-block-shipping-calculator-address__button {\A 6: 	width: 100%;\A 7: }\A 8: \A 9: .wc-block-cart__shipping-calculator {\A 10: 	padding: em($gap-smaller) 0 em($gap-small);\A 11: }"; }
+  content: "Error: Undefined variable: \"$gap-smaller\".\A         on line 10 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/shipping-calculator/style.scss\A \A 5: .wc-block-components-shipping-calculator-address__button {\A 6: 	width: 100%;\A 7: }\A 8: \A 9: .wc-block-components-shipping-calculator {\A 10: 	padding: em($gap-smaller) 0 em($gap-small);\A 11: }"; }

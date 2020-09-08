@@ -4,13 +4,13 @@ Error: Undefined mixin 'placeholder'.
         from line 3 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/reviews/review-list-item/style.scss
 
 1: .is-loading {
-2: 	.wc-block-review-list-item__text {
+2: 	.wc-block-components-review-list-item__text {
 3: 		@include placeholder();
-4: 		display: block;
-5: 		width: 60%;
-6: 	}
-7: 
-8: 	.wc-block-review-list-item__info {
+4: 		@include force-content();
+5: 		display: block;
+6: 		width: 60%;
+7: 	}
+8: 
 
 Backtrace:
 /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/reviews/review-list-item/style.scss:3:in `placeholder'
@@ -73,4 +73,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'placeholder'.\A         on line 3 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/reviews/review-list-item/style.scss, in `placeholder'\A         from line 3 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/reviews/review-list-item/style.scss\A \A 1: .is-loading {\A 2: 	.wc-block-review-list-item__text {\A 3: 		@include placeholder();\A 4: 		display: block;\A 5: 		width: 60%;\A 6: 	}\A 7: \A 8: 	.wc-block-review-list-item__info {"; }
+  content: "Error: Undefined mixin 'placeholder'.\A         on line 3 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/reviews/review-list-item/style.scss, in `placeholder'\A         from line 3 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/reviews/review-list-item/style.scss\A \A 1: .is-loading {\A 2: 	.wc-block-components-review-list-item__text {\A 3: 		@include placeholder();\A 4: 		@include force-content();\A 5: 		display: block;\A 6: 		width: 60%;\A 7: 	}\A 8: "; }

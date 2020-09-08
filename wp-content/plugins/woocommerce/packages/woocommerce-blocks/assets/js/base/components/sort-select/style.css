@@ -2,11 +2,11 @@
 Error: Undefined variable: "$gap-small".
         on line 2 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/sort-select/style.scss
 
-1: .wc-block-sort-select {
+1: .wc-block-components-sort-select {
 2: 	margin-bottom: $gap-small;
 3: }
 4: 
-5: .wc-block-sort-select__label {
+5: .wc-block-components-sort-select__label {
 6: 	margin-right: $gap-small;
 7: 	display: inline-block;
 
@@ -57,4 +57,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$gap-small\".\A         on line 2 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/sort-select/style.scss\A \A 1: .wc-block-sort-select {\A 2: 	margin-bottom: $gap-small;\A 3: }\A 4: \A 5: .wc-block-sort-select__label {\A 6: 	margin-right: $gap-small;\A 7: 	display: inline-block;"; }
+  content: "Error: Undefined variable: \"$gap-small\".\A         on line 2 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/sort-select/style.scss\A \A 1: .wc-block-components-sort-select {\A 2: 	margin-bottom: $gap-small;\A 3: }\A 4: \A 5: .wc-block-components-sort-select__label {\A 6: 	margin-right: $gap-small;\A 7: 	display: inline-block;"; }

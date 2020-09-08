@@ -2,7 +2,7 @@
 Error: Undefined variable: "$gap".
         on line 3 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/loading-mask/style.scss
 
-1: .wc-block-loading-mask {
+1: .wc-block-components-loading-mask {
 2: 	position: relative;
 3: 	min-height: 18px + $gap;
 4: 
@@ -60,4 +60,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$gap\".\A         on line 3 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/loading-mask/style.scss\A \A 1: .wc-block-loading-mask {\A 2: 	position: relative;\A 3: 	min-height: 18px + $gap;\A 4: \A 5: 	.components-spinner {\A 6: 		position: absolute;\A 7: 		margin: 0;\A 8: 		top: 50%;"; }
+  content: "Error: Undefined variable: \"$gap\".\A         on line 3 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/loading-mask/style.scss\A \A 1: .wc-block-components-loading-mask {\A 2: 	position: relative;\A 3: 	min-height: 18px + $gap;\A 4: \A 5: 	.components-spinner {\A 6: 		position: absolute;\A 7: 		margin: 0;\A 8: 		top: 50%;"; }

@@ -3,15 +3,15 @@ Error: Undefined mixin 'font-size'.
         on line 4 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/totals/totals-footer-item/style.scss, in `font-size'
         from line 4 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/totals/totals-footer-item/style.scss
 
-1: .wc-block-totals-footer-item {
-2: 	.wc-block-totals-table-item__value,
-3: 	.wc-block-totals-table-item__label {
+1: .wc-block-components-totals-footer-item {
+2: 	.wc-block-components-totals-item__value,
+3: 	.wc-block-components-totals-item__label {
 4: 		@include font-size(large);
-5: 		color: #000;
-6: 	}
-7: 
-8: 	.wc-block-totals-table-item__label {
-9: 		font-weight: normal;
+5: 	}
+6: 
+7: 	.wc-block-components-totals-item__label {
+8: 		font-weight: normal;
+9: 	}
 
 Backtrace:
 /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/totals/totals-footer-item/style.scss:4:in `font-size'
@@ -74,4 +74,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'font-size'.\A         on line 4 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/totals/totals-footer-item/style.scss, in `font-size'\A         from line 4 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/totals/totals-footer-item/style.scss\A \A 1: .wc-block-totals-footer-item {\A 2: 	.wc-block-totals-table-item__value,\A 3: 	.wc-block-totals-table-item__label {\A 4: 		@include font-size(large);\A 5: 		color: #000;\A 6: 	}\A 7: \A 8: 	.wc-block-totals-table-item__label {\A 9: 		font-weight: normal;"; }
+  content: "Error: Undefined mixin 'font-size'.\A         on line 4 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/totals/totals-footer-item/style.scss, in `font-size'\A         from line 4 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/totals/totals-footer-item/style.scss\A \A 1: .wc-block-components-totals-footer-item {\A 2: 	.wc-block-components-totals-item__value,\A 3: 	.wc-block-components-totals-item__label {\A 4: 		@include font-size(large);\A 5: 	}\A 6: \A 7: 	.wc-block-components-totals-item__label {\A 8: 		font-weight: normal;\A 9: 	}"; }

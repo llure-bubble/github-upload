@@ -3,13 +3,13 @@ Error: Undefined mixin 'font-size'.
         on line 2 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/product-metadata/style.scss, in `font-size'
         from line 2 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/product-metadata/style.scss
 
-1: .wc-block-product-metadata {
+1: .wc-block-components-product-metadata {
 2: 	@include font-size(smaller);
-3: 	color: $core-grey-dark-400;
-4: 
-5: 	p,
-6: 	.wc-block-product-variation-data {
-7: 		margin: 0.25em 0 0 0;
+3: 
+4: 	.wc-block-components-product-metadata__description > p,
+5: 	.wc-block-components-product-metadata__variation-data {
+6: 		margin: 0.25em 0 0 0;
+7: 	}
 
 Backtrace:
 /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/product-metadata/style.scss:2:in `font-size'
@@ -61,4 +61,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'font-size'.\A         on line 2 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/product-metadata/style.scss, in `font-size'\A         from line 2 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/product-metadata/style.scss\A \A 1: .wc-block-product-metadata {\A 2: 	@include font-size(smaller);\A 3: 	color: $core-grey-dark-400;\A 4: \A 5: 	p,\A 6: 	.wc-block-product-variation-data {\A 7: 		margin: 0.25em 0 0 0;"; }
+  content: "Error: Undefined mixin 'font-size'.\A         on line 2 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/product-metadata/style.scss, in `font-size'\A         from line 2 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/product-metadata/style.scss\A \A 1: .wc-block-components-product-metadata {\A 2: 	@include font-size(smaller);\A 3: \A 4: 	.wc-block-components-product-metadata__description > p,\A 5: 	.wc-block-components-product-metadata__variation-data {\A 6: 		margin: 0.25em 0 0 0;\A 7: 	}"; }

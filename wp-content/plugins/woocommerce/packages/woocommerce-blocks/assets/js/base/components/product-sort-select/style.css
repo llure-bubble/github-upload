@@ -2,7 +2,7 @@
 Error: Undefined variable: "$gap-large".
         on line 2 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/product-sort-select/style.scss
 
-1: .wc-block-product-sort-select {
+1: .wc-block-components-product-sort-select {
 2: 	margin-bottom: $gap-large;
 3: 	text-align: left;
 4: }
@@ -54,4 +54,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$gap-large\".\A         on line 2 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/product-sort-select/style.scss\A \A 1: .wc-block-product-sort-select {\A 2: 	margin-bottom: $gap-large;\A 3: 	text-align: left;\A 4: }"; }
+  content: "Error: Undefined variable: \"$gap-large\".\A         on line 2 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/product-sort-select/style.scss\A \A 1: .wc-block-components-product-sort-select {\A 2: 	margin-bottom: $gap-large;\A 3: 	text-align: left;\A 4: }"; }

@@ -4,7 +4,7 @@ Error: Undefined variable: "$gap-smaller".
 
 10: 	}
 11: 
-12: 	.wc-block-coupon-code__button {
+12: 	.wc-block-components-totals-coupon__button {
 13: 		height: 48px;
 14: 		flex-shrink: 0;
 15: 		margin-left: $gap-smaller;
@@ -72,4 +72,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$gap-smaller\".\A         on line 15 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/totals/totals-coupon-code-input/style.scss\A \A 10: 	}\A 11: \A 12: 	.wc-block-coupon-code__button {\A 13: 		height: 48px;\A 14: 		flex-shrink: 0;\A 15: 		margin-left: $gap-smaller;\A 16: 		padding-left: $gap-large;\A 17: 		padding-right: $gap-large;\A 18: 		white-space: nowrap;\A 19: 	}\A 20: }"; }
+  content: "Error: Undefined variable: \"$gap-smaller\".\A         on line 15 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/totals/totals-coupon-code-input/style.scss\A \A 10: 	}\A 11: \A 12: 	.wc-block-components-totals-coupon__button {\A 13: 		height: 48px;\A 14: 		flex-shrink: 0;\A 15: 		margin-left: $gap-smaller;\A 16: 		padding-left: $gap-large;\A 17: 		padding-right: $gap-large;\A 18: 		white-space: nowrap;\A 19: 	}\A 20: }"; }

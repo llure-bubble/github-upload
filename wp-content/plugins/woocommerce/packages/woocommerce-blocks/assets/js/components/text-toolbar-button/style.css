@@ -11,6 +11,8 @@ Error: Undefined variable: "$core-grey-dark-500".
 7: 		color: $white;
 8: 	}
 9: }
+10: .block-editor-block-toolbar__slot {
+11: 	// prevents text toolbar items shrinking to avoid other buttons overlapping.
 
 Backtrace:
 /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/components/text-toolbar-button/style.scss:6
@@ -70,4 +72,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$core-grey-dark-500\".\A         on line 6 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/components/text-toolbar-button/style.scss\A \A 1: .wc-block-text-toolbar-button {\A 2: 	align-items: center;\A 3: \A 4: 	&.is-toggled,\A 5: 	&.is-toggled:focus {\A 6: 		background: $core-grey-dark-500;\A 7: 		color: $white;\A 8: 	}\A 9: }"; }
+  content: "Error: Undefined variable: \"$core-grey-dark-500\".\A         on line 6 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/components/text-toolbar-button/style.scss\A \A 1: .wc-block-text-toolbar-button {\A 2: 	align-items: center;\A 3: \A 4: 	&.is-toggled,\A 5: 	&.is-toggled:focus {\A 6: 		background: $core-grey-dark-500;\A 7: 		color: $white;\A 8: 	}\A 9: }\A 10: .block-editor-block-toolbar__slot {\A 11: 	// prevents text toolbar items shrinking to avoid other buttons overlapping."; }

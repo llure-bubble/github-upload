@@ -4,7 +4,7 @@ Error: Undefined mixin 'reset-box'.
         from line 3 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/title/style.scss
 
 1: // Extra class for specificity to overwrite editor styles.
-2: .wc-block-component__title.wc-block-component__title {
+2: .wc-block-components-title.wc-block-components-title {
 3: 	@include reset-box();
 4: 	@include font-size(large);
 5: }
@@ -62,4 +62,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'reset-box'.\A         on line 3 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/title/style.scss, in `reset-box'\A         from line 3 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/title/style.scss\A \A 1: // Extra class for specificity to overwrite editor styles.\A 2: .wc-block-component__title.wc-block-component__title {\A 3: 	@include reset-box();\A 4: 	@include font-size(large);\A 5: }\A 6: \A 7: // For Twenty Twenty we need to increase specificity a bit more.\A 8: .theme-twentytwenty {"; }
+  content: "Error: Undefined mixin 'reset-box'.\A         on line 3 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/title/style.scss, in `reset-box'\A         from line 3 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/title/style.scss\A \A 1: // Extra class for specificity to overwrite editor styles.\A 2: .wc-block-components-title.wc-block-components-title {\A 3: 	@include reset-box();\A 4: 	@include font-size(large);\A 5: }\A 6: \A 7: // For Twenty Twenty we need to increase specificity a bit more.\A 8: .theme-twentytwenty {"; }

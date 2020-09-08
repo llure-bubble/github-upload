@@ -8,11 +8,11 @@ Error: Undefined variable: "$gap-small".
 9: 			flex: auto;
 10: 			background: transparent;
 11: 			padding: $gap-small $gap;
-12: 			color: $black;
+12: 			color: inherit;
 13: 			outline-offset: -1px;
 14: 			text-align: center;
 15: 			transition: box-shadow 0.1s linear;
-16: 			box-shadow: inset 0 -2px $core-grey-light-600;
+16: 			box-shadow: inset 0 -1px currentColor;
 
 Backtrace:
 /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/tabs/style.scss:11
@@ -87,4 +87,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$gap-small\".\A         on line 11 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/tabs/style.scss\A \A 6: 		width: 100%;\A 7: 		> .wc-block-components-tabs__item {\A 8: 			border: none;\A 9: 			flex: auto;\A 10: 			background: transparent;\A 11: 			padding: $gap-small $gap;\A 12: 			color: $black;\A 13: 			outline-offset: -1px;\A 14: 			text-align: center;\A 15: 			transition: box-shadow 0.1s linear;\A 16: 			box-shadow: inset 0 -2px $core-grey-light-600;"; }
+  content: "Error: Undefined variable: \"$gap-small\".\A         on line 11 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/tabs/style.scss\A \A 6: 		width: 100%;\A 7: 		> .wc-block-components-tabs__item {\A 8: 			border: none;\A 9: 			flex: auto;\A 10: 			background: transparent;\A 11: 			padding: $gap-small $gap;\A 12: 			color: inherit;\A 13: 			outline-offset: -1px;\A 14: 			text-align: center;\A 15: 			transition: box-shadow 0.1s linear;\A 16: 			box-shadow: inset 0 -1px currentColor;"; }

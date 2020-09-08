@@ -160,28 +160,14 @@ a.button {
   text-transform: uppercase;
   z-index: 1; }
 
-.wc-block-grid__products .wc-block-grid__product-onsale {
-  position: absolute;
-  top: 0;
-  display: inline-block;
-  background: #cd2653;
-  color: #fff;
-  font-family: -apple-system, blinkmacsystemfont, "Helvetica Neue", helvetica, sans-serif;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  line-height: 1.2;
-  text-transform: uppercase;
-  z-index: 1;
-  font-size: 1.5rem;
-  padding: 1rem; }
-
 .price {
   font-family: -apple-system, blinkmacsystemfont, "Helvetica Neue", helvetica, sans-serif; }
   .price del {
     opacity: 0.5;
     display: inline-block; }
   .price ins {
-    display: inline-block; }
+    display: inline-block;
+    text-decoration: none; }
 
 .woocommerce-message,
 .woocommerce-error,
@@ -1313,27 +1299,6 @@ a.reset_variations {
         font-family: -apple-system, blinkmacsystemfont, "Helvetica Neue", helvetica, sans-serif;
         font-size: 3rem; }
 
-ul.wc-block-grid__products {
-  display: flex;
-  align-items: stretch;
-  flex-direction: row;
-  flex-wrap: wrap; }
-  ul.wc-block-grid__products li.wc-block-grid__product {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 5em; }
-
-.wc-block-grid__product .wc-block-grid__product-title {
-  font-family: -apple-system, blinkmacsystemfont, "Helvetica Neue", helvetica, sans-serif;
-  color: #000;
-  font-size: 2.5rem; }
-.wc-block-grid__product .wc-block-grid__product-price .woocommerce-Price-amount {
-  font-size: 1.8rem; }
-.wc-block-grid__product .wc-block-grid__product-rating .star-rating {
-  font-size: 0.7em; }
-
 @media only screen and (max-width: 600px) {
   .woocommerce .woocommerce-ordering {
     float: left;
@@ -1471,10 +1436,6 @@ ul.wc-block-grid__products {
     font-size: 1.5rem;
     padding: 1rem; }
 
-  .wc-block-grid__products .wc-block-grid__product-onsale {
-    font-size: 1.5rem;
-    padding: 1rem; }
-
   /**
   * Shop page
   */
@@ -1562,10 +1523,6 @@ ul.wc-block-grid__products {
     padding: 4vw 6vw;
     margin: 0 auto; }
   .woocommerce .onsale {
-    font-size: 1.7rem;
-    padding: 1.5rem; }
-
-  .wc-block-grid__products .wc-block-grid__product-onsale {
     font-size: 1.7rem;
     padding: 1.5rem; }
 

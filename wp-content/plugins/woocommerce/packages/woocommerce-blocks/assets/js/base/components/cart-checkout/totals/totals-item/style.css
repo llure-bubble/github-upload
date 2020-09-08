@@ -2,14 +2,14 @@
 Error: Undefined variable: "$gap-small".
         on line 4 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/totals/totals-item/style.scss
 
-1: .wc-block-totals-table-item {
+1: .wc-block-components-totals-item {
 2: 	display: flex;
 3: 	flex-wrap: wrap;
 4: 	padding: em($gap-small) 0;
 5: 	width: 100%;
 6: }
 7: 
-8: .wc-block-totals-table-item__label {
+8: .wc-block-components-totals-item__label {
 9: 	flex-grow: 1;
 
 Backtrace:
@@ -71,4 +71,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$gap-small\".\A         on line 4 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/totals/totals-item/style.scss\A \A 1: .wc-block-totals-table-item {\A 2: 	display: flex;\A 3: 	flex-wrap: wrap;\A 4: 	padding: em($gap-small) 0;\A 5: 	width: 100%;\A 6: }\A 7: \A 8: .wc-block-totals-table-item__label {\A 9: 	flex-grow: 1;"; }
+  content: "Error: Undefined variable: \"$gap-small\".\A         on line 4 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/totals/totals-item/style.scss\A \A 1: .wc-block-components-totals-item {\A 2: 	display: flex;\A 3: 	flex-wrap: wrap;\A 4: 	padding: em($gap-small) 0;\A 5: 	width: 100%;\A 6: }\A 7: \A 8: .wc-block-components-totals-item__label {\A 9: 	flex-grow: 1;"; }

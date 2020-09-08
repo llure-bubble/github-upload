@@ -2,12 +2,12 @@
 Error: Undefined variable: "$gap".
         on line 4 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/payment-method-icons/style.scss
 
-1: .wc-block-cart__payment-method-icons {
+1: .wc-block-components-payment-method-icons {
 2: 	display: block;
 3: 	text-align: center;
 4: 	margin: 0 0 #{$gap - 2px};
 5: 
-6: 	.wc-blocks-payment-method-icon {
+6: 	.wc-block-components-payment-method-icon {
 7: 		display: inline-block;
 8: 		margin: 0 4px 2px;
 9: 		padding: 0;
@@ -63,4 +63,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$gap\".\A         on line 4 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/payment-method-icons/style.scss\A \A 1: .wc-block-cart__payment-method-icons {\A 2: 	display: block;\A 3: 	text-align: center;\A 4: 	margin: 0 0 #{$gap - 2px};\A 5: \A 6: 	.wc-blocks-payment-method-icon {\A 7: 		display: inline-block;\A 8: 		margin: 0 4px 2px;\A 9: 		padding: 0;"; }
+  content: "Error: Undefined variable: \"$gap\".\A         on line 4 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/payment-method-icons/style.scss\A \A 1: .wc-block-components-payment-method-icons {\A 2: 	display: block;\A 3: 	text-align: center;\A 4: 	margin: 0 0 #{$gap - 2px};\A 5: \A 6: 	.wc-block-components-payment-method-icon {\A 7: 		display: inline-block;\A 8: 		margin: 0 4px 2px;\A 9: 		padding: 0;"; }

@@ -4,7 +4,7 @@ Error: Undefined variable: "$core-grey-light-600".
 
 11: }
 12: 
-13: .wc-block-quantity-selector {
+13: .wc-block-components-quantity-selector {
 14: 	display: flex;
 15: 	min-width: 100px;
 16: 	border: 1px solid $core-grey-light-600;
@@ -12,7 +12,7 @@ Error: Undefined variable: "$core-grey-light-600".
 18: 	border-radius: 4px;
 19: 
 20: 	// Extra label for specificity needed in the editor.
-21: 	input.wc-block-quantity-selector__input {
+21: 	input.wc-block-components-quantity-selector__input {
 
 Backtrace:
 /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/quantity-selector/style.scss:16
@@ -65,4 +65,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$core-grey-light-600\".\A         on line 16 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/quantity-selector/style.scss\A \A 11: }\A 12: \A 13: .wc-block-quantity-selector {\A 14: 	display: flex;\A 15: 	min-width: 100px;\A 16: 	border: 1px solid $core-grey-light-600;\A 17: 	background: #fff;\A 18: 	border-radius: 4px;\A 19: \A 20: 	// Extra label for specificity needed in the editor.\A 21: 	input.wc-block-quantity-selector__input {"; }
+  content: "Error: Undefined variable: \"$core-grey-light-600\".\A         on line 16 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/quantity-selector/style.scss\A \A 11: }\A 12: \A 13: .wc-block-components-quantity-selector {\A 14: 	display: flex;\A 15: 	min-width: 100px;\A 16: 	border: 1px solid $core-grey-light-600;\A 17: 	background: #fff;\A 18: 	border-radius: 4px;\A 19: \A 20: 	// Extra label for specificity needed in the editor.\A 21: 	input.wc-block-components-quantity-selector__input {"; }
