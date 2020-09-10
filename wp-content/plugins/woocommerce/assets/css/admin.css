@@ -4347,7 +4347,8 @@ img.help_tip {
   .wc-metaboxes-wrapper .wc-metabox:last-of-type {
     border-bottom: 0; }
   .wc-metaboxes-wrapper .wc-metabox .handlediv {
-    width: 27px; }
+    width: 27px;
+    float: right; }
     .wc-metaboxes-wrapper .wc-metabox .handlediv::before {
       content: "\f142" !important;
       cursor: pointer;

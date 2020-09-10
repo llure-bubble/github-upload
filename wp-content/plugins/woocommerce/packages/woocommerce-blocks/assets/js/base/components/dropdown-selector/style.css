@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$input-border-gray".
-        on line 13 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/upgrade/woocommerce.4.4.1-ya1ecU/woocommerce/packages/woocommerce-blocks/assets/js/base/components/dropdown-selector/style.scss
+        on line 13 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/dropdown-selector/style.scss
 
 8: 	width: 100%;
 9: }
@@ -15,7 +15,7 @@ Error: Undefined variable: "$input-border-gray".
 18: 	display: flex;
 
 Backtrace:
-/Users/BUBBLE07/Sites/www.healthy.local/wp-content/upgrade/woocommerce.4.4.1-ya1ecU/woocommerce/packages/woocommerce-blocks/assets/js/base/components/dropdown-selector/style.scss:13
+/Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/dropdown-selector/style.scss:13
 /Applications/Adobe Dreamweaver 2020/Adobe Dreamweaver 2020.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Applications/Adobe Dreamweaver 2020/Adobe Dreamweaver 2020.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
 /Applications/Adobe Dreamweaver 2020/Adobe Dreamweaver 2020.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/script/tree/list_literal.rb:75:in `block in _perform'
@@ -65,4 +65,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$input-border-gray\".\A         on line 13 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/upgrade/woocommerce.4.4.1-ya1ecU/woocommerce/packages/woocommerce-blocks/assets/js/base/components/dropdown-selector/style.scss\A \A 8: 	width: 100%;\A 9: }\A 10: \A 11: .wc-block-components-dropdown-selector__input-wrapper {\A 12: 	background: #fff;\A 13: 	border: 1px solid $input-border-gray;\A 14: 	color: $input-text-active;\A 15: 	align-items: center;\A 16: 	border-radius: 4px;\A 17: 	cursor: text;\A 18: 	display: flex;"; }
+  content: "Error: Undefined variable: \"$input-border-gray\".\A         on line 13 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/dropdown-selector/style.scss\A \A 8: 	width: 100%;\A 9: }\A 10: \A 11: .wc-block-components-dropdown-selector__input-wrapper {\A 12: 	background: #fff;\A 13: 	border: 1px solid $input-border-gray;\A 14: 	color: $input-text-active;\A 15: 	align-items: center;\A 16: 	border-radius: 4px;\A 17: 	cursor: text;\A 18: 	display: flex;"; }

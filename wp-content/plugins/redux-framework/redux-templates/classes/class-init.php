@@ -132,6 +132,7 @@ class Init {
 			'i18n'              => 'redux-framework',
 			'plugin'            => REDUXTEMPLATES_DIR_URL,
 			'mokama'            => \Redux_Helpers::mokama(),
+			'key'               => \base64_encode( \Redux_Functions::gs() ), // phpcs:ignore WordPress.PHP.DiscouragedPHPFunctions.obfuscation_base64_encode
 			'version'           => \Redux_Core::$version,
 			'supported_plugins' => array(), // Load the supported plugins.
 			'tos'               => \Redux_Connection_Banner::tos_blurb( 'import_wizard' ),
@@ -142,11 +143,7 @@ class Init {
 			// phpcs:disable Squiz.PHP.CommentedOutCode
 			// delete_user_meta( get_current_user_id(), '_redux_templates_counts'); // To test left.
 			if ( ! \Redux_Functions_Ex::activated() ) {
-				$count = get_user_meta( get_current_user_id(), '_redux_templates_counts', true );
-				if ( '' === $count ) {
-					$count = self::$default_left;
-				}
-				$global_vars['left'] = $count;
+				$global_vars['left'] = ReduxTemplates\Init::left( get_current_user_id() );
 			} else {
 				$global_vars['left'] = 999;
 			}
@@ -194,6 +191,27 @@ class Init {
 			REDUXTEMPLATES_VERSION
 		);
 	}
+
+	/**
+	 * Get the items left.
+	 *
+	 * @param int $uid User ID number.
+	 * @access public
+	 * @since 4.1.18
+	 * @return int
+	 */
+	public static function left( $uid ) {
+		$count = get_user_meta( $uid, '_redux_templates_counts', true );
+		if ( empty( $count ) ) {
+			$count = self::$default_left;
+		}
+		if ( $count <= 0 ) {
+			$count = 0;
+		}
+
+		return $count;
+	}
+
 }
 
 new Init();
