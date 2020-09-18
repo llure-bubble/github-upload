@@ -52,6 +52,10 @@ jQuery(document).ready(function($){
         });
     }
 
+	if (jQuery('#icl_login_page_translation').length) {
+		jQuery('#icl_login_page_translation').submit(iclSaveForm);
+	}
+
     jQuery('.icl_sync_custom_posts').change(function(){
         var val = jQuery(this).val();
         var table_row = jQuery(this).closest('tr');

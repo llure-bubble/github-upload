@@ -2,10 +2,10 @@
 /**
  * Plugin Name: WPML Multilingual CMS
  * Plugin URI: https://wpml.org/
- * Description: WPML Multilingual CMS | <a href="https://wpml.org">Documentation</a> | <a href="https://wpml.org/version/wpml-4-3-19/">WPML 4.3.19 release notes</a>
+ * Description: WPML Multilingual CMS | <a href="https://wpml.org">Documentation</a> | <a href="https://wpml.org/version/wpml-4-4-2/">WPML 4.4.2 release notes</a>
  * Author: OnTheGoSystems
  * Author URI: http://www.onthegosystems.com/
- * Version: 4.3.19
+ * Version: 4.4.2
  * Plugin Slug: sitepress-multilingual-cms
  *
  * @package WPML\Core
@@ -27,7 +27,7 @@ if ( ! \WPML\Requirements\WordPress::checkMinimumRequiredVersion() ) {
 	return;
 }
 
-define( 'ICL_SITEPRESS_VERSION', '4.3.19' );
+define( 'ICL_SITEPRESS_VERSION', '4.4.2' );
 
 // Do not uncomment the following line!
 // If you need to use this constant, use it in the wp-config.php file
@@ -213,6 +213,11 @@ if ( $sitepress->is_setup_complete() ) {
 		'\WPML\WP\OptionManager',
 		'\WPML\Notices\DismissNotices',
 		'\WPML\Ajax\Locale',
+		'\WPML\Ajax\Factory',
+		\WPML\PostTranslation\SpecialPage\Hooks::class,
+		\WPML\LanguageSwitcher\AjaxNavigation\Hooks::class,
+		\WPML\BrowserLanguageRedirect\Dialog::class,
+		\WPML\UrlHandling\WPLoginUrlConverterFactory::class
 	];
 	$action_filter_loader->load( $actions );
 

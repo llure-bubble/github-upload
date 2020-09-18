@@ -1,7 +1,7 @@
 /*
 Error: Undefined mixin 'breakpoint'.
-        on line 34 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/store-notices-container/style.scss, in `breakpoint'
-        from line 34 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/store-notices-container/style.scss
+        on line 34 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/upgrade/woocommerce.4.5.2-vRiSMH/woocommerce/packages/woocommerce-blocks/assets/js/base/components/store-notices-container/style.scss, in `breakpoint'
+        from line 34 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/upgrade/woocommerce.4.5.2-vRiSMH/woocommerce/packages/woocommerce-blocks/assets/js/base/components/store-notices-container/style.scss
 
 29: 	position: fixed;
 30: 	bottom: 20px;
@@ -16,8 +16,8 @@ Error: Undefined mixin 'breakpoint'.
 39: 	}
 
 Backtrace:
-/Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/store-notices-container/style.scss:34:in `breakpoint'
-/Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/store-notices-container/style.scss:34
+/Users/BUBBLE07/Sites/www.healthy.local/wp-content/upgrade/woocommerce.4.5.2-vRiSMH/woocommerce/packages/woocommerce-blocks/assets/js/base/components/store-notices-container/style.scss:34:in `breakpoint'
+/Users/BUBBLE07/Sites/www.healthy.local/wp-content/upgrade/woocommerce.4.5.2-vRiSMH/woocommerce/packages/woocommerce-blocks/assets/js/base/components/store-notices-container/style.scss:34
 /Applications/Adobe Dreamweaver 2020/Adobe Dreamweaver 2020.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:348:in `block in visit_mixin'
 /Applications/Adobe Dreamweaver 2020/Adobe Dreamweaver 2020.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/stack.rb:98:in `block in with_mixin'
 /Applications/Adobe Dreamweaver 2020/Adobe Dreamweaver 2020.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
@@ -65,4 +65,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'breakpoint'.\A         on line 34 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/store-notices-container/style.scss, in `breakpoint'\A         from line 34 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/store-notices-container/style.scss\A \A 29: 	position: fixed;\A 30: 	bottom: 20px;\A 31: 	left: 16px;\A 32: 	width: auto;\A 33: \A 34: 	@include breakpoint( \"<782px\" ) {\A 35: 		position: fixed;\A 36: 		top: 10px;\A 37: 		left: 0;\A 38: 		bottom: auto;\A 39: 	}"; }
+  content: "Error: Undefined mixin 'breakpoint'.\A         on line 34 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/upgrade/woocommerce.4.5.2-vRiSMH/woocommerce/packages/woocommerce-blocks/assets/js/base/components/store-notices-container/style.scss, in `breakpoint'\A         from line 34 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/upgrade/woocommerce.4.5.2-vRiSMH/woocommerce/packages/woocommerce-blocks/assets/js/base/components/store-notices-container/style.scss\A \A 29: 	position: fixed;\A 30: 	bottom: 20px;\A 31: 	left: 16px;\A 32: 	width: auto;\A 33: \A 34: 	@include breakpoint( \"<782px\" ) {\A 35: 		position: fixed;\A 36: 		top: 10px;\A 37: 		left: 0;\A 38: 		bottom: auto;\A 39: 	}"; }

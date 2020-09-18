@@ -39,6 +39,7 @@ if ( isset( $action ) && wp_verify_nonce( $nonce, $action ) ) {
 	  case 'fix_languages':
 		  SitePress_Setup::fill_languages();
 		  SitePress_Setup::fill_languages_translations();
+		  SitePress_Setup::fill_flags();
 		  icl_cache_clear();
 		  exit;
 		case 'icl_fix_collation':

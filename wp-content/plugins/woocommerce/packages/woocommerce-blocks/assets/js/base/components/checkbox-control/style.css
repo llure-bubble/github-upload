@@ -1,7 +1,7 @@
 /*
 Error: Undefined mixin 'reset-typography'.
-        on line 2 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/checkbox-control/style.scss, in `reset-typography'
-        from line 2 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/checkbox-control/style.scss
+        on line 2 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/upgrade/woocommerce.4.5.2-vRiSMH/woocommerce/packages/woocommerce-blocks/assets/js/base/components/checkbox-control/style.scss, in `reset-typography'
+        from line 2 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/upgrade/woocommerce.4.5.2-vRiSMH/woocommerce/packages/woocommerce-blocks/assets/js/base/components/checkbox-control/style.scss
 
 1: .wc-block-components-checkbox {
 2: 	@include reset-typography();
@@ -12,8 +12,8 @@ Error: Undefined mixin 'reset-typography'.
 7: 		appearance: none;
 
 Backtrace:
-/Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/checkbox-control/style.scss:2:in `reset-typography'
-/Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/checkbox-control/style.scss:2
+/Users/BUBBLE07/Sites/www.healthy.local/wp-content/upgrade/woocommerce.4.5.2-vRiSMH/woocommerce/packages/woocommerce-blocks/assets/js/base/components/checkbox-control/style.scss:2:in `reset-typography'
+/Users/BUBBLE07/Sites/www.healthy.local/wp-content/upgrade/woocommerce.4.5.2-vRiSMH/woocommerce/packages/woocommerce-blocks/assets/js/base/components/checkbox-control/style.scss:2
 /Applications/Adobe Dreamweaver 2020/Adobe Dreamweaver 2020.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:348:in `block in visit_mixin'
 /Applications/Adobe Dreamweaver 2020/Adobe Dreamweaver 2020.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/stack.rb:98:in `block in with_mixin'
 /Applications/Adobe Dreamweaver 2020/Adobe Dreamweaver 2020.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
@@ -61,4 +61,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'reset-typography'.\A         on line 2 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/checkbox-control/style.scss, in `reset-typography'\A         from line 2 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/checkbox-control/style.scss\A \A 1: .wc-block-components-checkbox {\A 2: 	@include reset-typography();\A 3: 	display: block;\A 4: 	position: relative;\A 5: \A 6: 	.wc-block-components-checkbox__input[type=\"checkbox\"] {\A 7: 		appearance: none;"; }
+  content: "Error: Undefined mixin 'reset-typography'.\A         on line 2 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/upgrade/woocommerce.4.5.2-vRiSMH/woocommerce/packages/woocommerce-blocks/assets/js/base/components/checkbox-control/style.scss, in `reset-typography'\A         from line 2 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/upgrade/woocommerce.4.5.2-vRiSMH/woocommerce/packages/woocommerce-blocks/assets/js/base/components/checkbox-control/style.scss\A \A 1: .wc-block-components-checkbox {\A 2: 	@include reset-typography();\A 3: 	display: block;\A 4: 	position: relative;\A 5: \A 6: 	.wc-block-components-checkbox__input[type=\"checkbox\"] {\A 7: 		appearance: none;"; }

@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$gap-small".
-        on line 7 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/add-to-cart/style.scss
+        on line 7 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/upgrade/woocommerce.4.5.2-vRiSMH/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/add-to-cart/style.scss
 
 2: 	margin: 0;
 3: 	display: flex;
@@ -15,7 +15,7 @@ Error: Undefined variable: "$gap-small".
 12: 			> svg {
 
 Backtrace:
-/Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/add-to-cart/style.scss:7
+/Users/BUBBLE07/Sites/www.healthy.local/wp-content/upgrade/woocommerce.4.5.2-vRiSMH/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/add-to-cart/style.scss:7
 /Applications/Adobe Dreamweaver 2020/Adobe Dreamweaver 2020.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Applications/Adobe Dreamweaver 2020/Adobe Dreamweaver 2020.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
 /Applications/Adobe Dreamweaver 2020/Adobe Dreamweaver 2020.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/script/tree/funcall.rb:182:in `perform_arg'
@@ -84,4 +84,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$gap-small\".\A         on line 7 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/add-to-cart/style.scss\A \A 2: 	margin: 0;\A 3: 	display: flex;\A 4: 	flex-wrap: wrap;\A 5: \A 6: 	.wc-block-components-product-add-to-cart-button {\A 7: 		margin: 0 0 em($gap-small) 0;\A 8: \A 9: 		.wc-block-components-button__text {\A 10: 			display: block;\A 11: \A 12: 			> svg {"; }
+  content: "Error: Undefined variable: \"$gap-small\".\A         on line 7 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/upgrade/woocommerce.4.5.2-vRiSMH/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/add-to-cart/style.scss\A \A 2: 	margin: 0;\A 3: 	display: flex;\A 4: 	flex-wrap: wrap;\A 5: \A 6: 	.wc-block-components-product-add-to-cart-button {\A 7: 		margin: 0 0 em($gap-small) 0;\A 8: \A 9: 		.wc-block-components-button__text {\A 10: 			display: block;\A 11: \A 12: 			> svg {"; }

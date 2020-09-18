@@ -707,8 +707,8 @@
 				$( ".result-search-products",$element ).removeClass("loading");
 				$( ".result-search-products",$element ).empty();
 				$( ".result-search-products",$element ).hide();
-			}				
-		  }, 200, $(this));
+			}
+			},200,$(this));
 		});	
 	}
 	function _event_circlestime(){

@@ -263,7 +263,7 @@ class WPML_TM_Xliff_Writer {
 							$field_data_translated,
 							$element->translated_from_memory,
 							$element->field_wrap_tag,
-							$this->get_field_title( $element )
+							$this->get_field_title( $element, $job )
 						);
 					}
 				}
@@ -274,11 +274,12 @@ class WPML_TM_Xliff_Writer {
 
 	/**
 	 * @param \stdClass $field
+	 * @param \stdClass $job
 	 *
 	 * @return string
 	 */
-	private function get_field_title( $field ) {
-		$result = apply_filters( 'wpml_tm_adjust_translation_fields', [ (array) $field ], null );
+	private function get_field_title( $field, $job ) {
+		$result = apply_filters( 'wpml_tm_adjust_translation_fields', [ (array) $field ], $job, null );
 
 		return Obj::pathOr( '', [ 0, 'title' ], $result );
 	}

@@ -275,6 +275,16 @@ class WPML_Elementor_Translatable_Nodes implements IWPML_Page_Builders_Translata
 						'type'        => __( 'Video: DailyMotion URL', 'sitepress' ),
 						'editor_type' => 'LINE'
 					),
+					'hosted_url'=> array(
+						'field'       => 'url',
+						'type'        => __( 'Video: Self hosted', 'sitepress' ),
+						'editor_type' => 'LINE'
+					),
+					'external_url'=> array(
+						'field'       => 'url',
+						'type'        => __( 'Video: External hosted', 'sitepress' ),
+						'editor_type' => 'LINE'
+					),
 				),
 			),
 			'login'       => array(
@@ -423,6 +433,16 @@ class WPML_Elementor_Translatable_Nodes implements IWPML_Page_Builders_Translata
 					array(
 						'field'       => 'title',
 						'type'        => __( 'Title', 'sitepress' ),
+						'editor_type' => 'LINE'
+					),
+					array(
+						'field'       => 'prefix',
+						'type'        => __( 'Prefix', 'sitepress' ),
+						'editor_type' => 'LINE'
+					),
+					array(
+						'field'       => 'suffix',
+						'type'        => __( 'Suffix', 'sitepress' ),
 						'editor_type' => 'LINE'
 					),
 				),
@@ -902,6 +922,31 @@ class WPML_Elementor_Translatable_Nodes implements IWPML_Page_Builders_Translata
 						'editor_type' => 'LINK',
 					),
 				),
+			),
+			'reviews' => array(
+				'conditions'        => array( self::TYPE => 'reviews' ),
+				'fields'     => [],
+				'integration-class' => [
+					'\WPML\PB\Elementor\Modules\Reviews',
+				]
+			),
+			'galleries' => array(
+				'conditions'        => array( self::TYPE => 'gallery' ),
+				'fields'            => array(
+					array(
+						'field'       => 'show_all_galleries_label',
+						'type'        => __( 'All Gallery Label', 'sitepress' ),
+						'editor_type' => 'LINE'
+					),
+					'url' => array(
+						'field'       => 'url',
+						'type'        => __( 'Gallery custom link', 'sitepress' ),
+						'editor_type' => 'LINK'
+					),
+				),
+				'integration-class' => [
+					'\WPML\PB\Elementor\Modules\MulitpleGallery',
+				]
 			),
 		);
 	}

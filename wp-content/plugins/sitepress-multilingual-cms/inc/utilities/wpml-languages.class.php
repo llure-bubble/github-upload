@@ -100,12 +100,17 @@ class WPML_Languages extends WPML_SP_And_PT_User {
 			$taxonomy       = isset( $queried_object->taxonomy ) ? $queried_object->taxonomy : null;
 
 			if ( $taxonomy ) {
-				$lang['translated_url'] = $this->sitepress->get_wp_api()
-				                                          ->get_term_link( (int) $translations[ $lang['code'] ]->term_id, $taxonomy );
-				$lang['missing']        = 0;
+				$translated_url = get_term_link( (int) $translations[ $lang['code'] ]->term_id, $taxonomy );
 
-				if ( 'post_format' === $taxonomy  ) {
-					$lang['translated_url'] = $this->sitepress->convert_url( $lang['translated_url'], $lang['code'] );
+				if ( ! $translated_url instanceof WP_Error ) {
+					$lang['translated_url'] = $translated_url;
+					$lang['missing']        = 0;
+
+					if ( 'post_format' === $taxonomy ) {
+						$lang['translated_url'] = $this->sitepress->convert_url( $lang['translated_url'], $lang['code'] );
+					}
+				} else {
+					$skip_lang = true;
 				}
 			}
 		}

@@ -10,6 +10,7 @@
     * [identity](#identity)
     * [tap](#tap)
     * [reduce](#reduce)
+    * [reduceRight](#reduceright)
     * [filter](#filter)
     * [reject](#reject)
     * [value](#value)
@@ -48,15 +49,13 @@
     * [cond](#cond)
     * [both](#both)
     * [allPass](#allpass)
-    * [](#-1)
     * [anyPass](#anypass)
     * [complement](#complement)
     * [defaultTo](#defaultto)
     * [either](#either-1)
-    * [](#-2)
-    * [](#-3)
+    * [](#-1)
     * [propSatisfies](#propsatisfies)
-    * [](#-4)
+    * [](#-2)
     * [isEmpty](#isempty)
     * [init](#init-1)
 * [Lst](#lst)
@@ -85,10 +84,12 @@
     * [drop](#drop)
     * [dropLast](#droplast)
     * [makePair](#makepair)
-    * [](#-5)
+    * [](#-3)
     * [insert](#insert)
     * [range](#range)
     * [xprod](#xprod)
+    * [prepend](#prepend)
+    * [reverse](#reverse)
     * [init](#init-2)
 * [Math](#math)
     * [multiply](#multiply)
@@ -116,8 +117,10 @@
     * [where](#where)
     * [has](#has)
     * [evolve](#evolve)
+    * [objOf](#objof)
     * [keys](#keys)
     * [values](#values)
+    * [replaceRecursive](#replacerecursive)
     * [init](#init-4)
 * [Relation](#relation)
     * [equals](#equals)
@@ -142,6 +145,7 @@
     * [pregReplace](#pregreplace)
     * [match](#match)
     * [matchAll](#matchall)
+    * [wrap](#wrap)
     * [init](#init-6)
 
 ## Fns
@@ -253,7 +257,7 @@ Dispatches to the *map* method of the second argument, if present
 Fns::(  ): 
 ```
 
-static callable|mixed forEach ( ...$fn, ...$target ) - Curried :: ( a→b )→f a→f b
+static callable|mixed each ( ...$fn, ...$target ) - Curried :: ( a→b )→f a→f b
 
 
 
@@ -315,6 +319,51 @@ Fns::reduce( mixed $...$fn, mixed $...$initial, mixed $...$target ): callable|mi
 ```
 
 - Curried :: ( ( a, b ) → a ) → a → [b] → a
+
+* This method is **static**.
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$...$fn` | **mixed** |  |
+| `$...$initial` | **mixed** |  |
+| `$...$target` | **mixed** |  |
+
+
+
+
+---
+
+### reduceRight
+
+
+
+```php
+Fns::reduceRight( mixed $...$fn, mixed $...$initial, mixed $...$target ): callable|mixed
+```
+
+- Curried :: ( ( a, b ) → a ) → a → [b] → a
+
+Takes a function, an initial value and an array and returns the result.
+
+The function receives two values, the accumulator and the current value, and should return a result.
+
+The array values are passed to the function in the reverse order.
+
+```php
+$numbers = [ 1, 2, 3, 4, 5, 8, 19 ];
+
+$append = function( $acc, $val ) {
+   $acc[] = $val;
+   return $acc;
+};
+
+$reducer = Fns::reduceRight( $append, [] );
+$result = $reducer( $numbers ); // [ 19, 8, 5, 4, 3, 2, 1 ]
+
+// Works on collections too.
+$result = $reducer( wpml_collect( $numbers ) ); // [ 19, 8, 5, 4, 3, 2, 1 ]
+```
 
 * This method is **static**.
 **Parameters:**
@@ -1193,22 +1242,6 @@ Logic::allPass( array $predicates ): callable
 
 ---
 
-### 
-
-
-
-```php
-Logic::(  ): 
-```
-
-static callable|bool and ( ...$a, ...$b ) - Curried :: a → b → bool
-
-
-
-
-
----
-
 ### anyPass
 
 
@@ -1293,22 +1326,6 @@ Logic::either( mixed $...$a, mixed $...$b ): callable|boolean
 |-----------|------|-------------|
 | `$...$a` | **mixed** |  |
 | `$...$b` | **mixed** |  |
-
-
-
-
----
-
-### 
-
-
-
-```php
-Logic::(  ): 
-```
-
-static callable|bool or ( ...$a, ...$b ) - Curried :: a → b → bool
-
 
 
 
@@ -2061,7 +2078,7 @@ Lst::range( mixed $...$from, mixed $...$to ): callable|array
 Lst::xprod( mixed $...$a, mixed $...$b ): callable|array
 ```
 
-- Curried :: [a] -> [b] -> [a, b]
+- Curried :: [a]->[b]->[a, b]
 
 Creates a new list out of the two supplied by creating each possible pair from the lists.
 
@@ -2084,6 +2101,55 @@ $this->assertEquals( $expectedResult, Lst::xprod( $a, $b ) );
 |-----------|------|-------------|
 | `$...$a` | **mixed** |  |
 | `$...$b` | **mixed** |  |
+
+
+
+
+---
+
+### prepend
+
+
+
+```php
+Lst::prepend( mixed $...$val, mixed $...$array ): callable|array
+```
+
+- Curried:: a → [a] → [a]
+
+Returns a new array with the given element at the front, followed by the contents of the list.
+
+* This method is **static**.
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$...$val` | **mixed** |  |
+| `$...$array` | **mixed** |  |
+
+
+
+
+---
+
+### reverse
+
+
+
+```php
+Lst::reverse( mixed $...$array ): callable|array
+```
+
+- Curried:: [a] → [a]
+
+Returns a new array with the elements reversed.
+
+* This method is **static**.
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$...$array` | **mixed** |  |
 
 
 
@@ -2671,6 +2737,31 @@ Obj::evolve( mixed $...$transformations, mixed $...$item ): callable|mixed
 
 ---
 
+### objOf
+
+
+
+```php
+Obj::objOf( mixed $...$key, mixed $...$value ): callable|array
+```
+
+- Curried :: string -> mixed -> array
+
+Creates an object containing a single key:value pair.
+
+* This method is **static**.
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$...$key` | **mixed** |  |
+| `$...$value` | **mixed** |  |
+
+
+
+
+---
+
 ### keys
 
 
@@ -2739,6 +2830,29 @@ $this->assertEquals( [ 1, 2, 3 ], Obj::values( (object) [ 'a' => 1, 'b' => 2, 'c
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$...$obj` | **mixed** |  |
+
+
+
+
+---
+
+### replaceRecursive
+
+
+
+```php
+Obj::replaceRecursive( mixed $array, mixed $...$target ): callable|array
+```
+
+- Curried :: array->array->array
+
+* This method is **static**.
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$array` | **mixed** |  |
+| `$...$target` | **mixed** |  |
 
 
 
@@ -3256,6 +3370,37 @@ Str::matchAll( mixed $...$pattern, mixed $...$str ): callable|string
 
 ---
 
+### wrap
+
+
+
+```php
+Str::wrap( mixed $...$before, mixed $...$after, mixed $...$str ): callable|string
+```
+
+- Curried :: string → string → string
+
+Wraps a string inside 2 other strings
+
+```
+$wrapsInDiv = Str::wrap( '<div>', '</div>' );
+$wrapsInDiv( 'To be wrapped' ); // '<div>To be wrapped</div>'
+```
+
+* This method is **static**.
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$...$before` | **mixed** |  |
+| `$...$after` | **mixed** |  |
+| `$...$str` | **mixed** |  |
+
+
+
+
+---
+
 ### init
 
 
@@ -3275,4 +3420,4 @@ Str::init(  )
 
 
 --------
-> This document was automatically generated from source code comments on 2020-05-21 using [phpDocumentor](http://www.phpdoc.org/) and [cvuorinen/phpdoc-markdown-public](https://github.com/cvuorinen/phpdoc-markdown-public)
+> This document was automatically generated from source code comments on 2020-06-10 using [phpDocumentor](http://www.phpdoc.org/) and [cvuorinen/phpdoc-markdown-public](https://github.com/cvuorinen/phpdoc-markdown-public)

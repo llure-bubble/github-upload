@@ -1,7 +1,7 @@
 /*
 Error: Undefined mixin 'with-translucent-border'.
-        on line 14 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/order-summary/style.scss, in `with-translucent-border'
-        from line 14 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/order-summary/style.scss
+        on line 14 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/upgrade/woocommerce.4.5.2-vRiSMH/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/order-summary/style.scss, in `with-translucent-border'
+        from line 14 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/upgrade/woocommerce.4.5.2-vRiSMH/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/order-summary/style.scss
 
 9: 	display: table;
 10: 	width: 100%;
@@ -16,8 +16,8 @@ Error: Undefined mixin 'with-translucent-border'.
 19: 	&:last-child {
 
 Backtrace:
-/Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/order-summary/style.scss:14:in `with-translucent-border'
-/Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/order-summary/style.scss:14
+/Users/BUBBLE07/Sites/www.healthy.local/wp-content/upgrade/woocommerce.4.5.2-vRiSMH/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/order-summary/style.scss:14:in `with-translucent-border'
+/Users/BUBBLE07/Sites/www.healthy.local/wp-content/upgrade/woocommerce.4.5.2-vRiSMH/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/order-summary/style.scss:14
 /Applications/Adobe Dreamweaver 2020/Adobe Dreamweaver 2020.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:348:in `block in visit_mixin'
 /Applications/Adobe Dreamweaver 2020/Adobe Dreamweaver 2020.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/stack.rb:98:in `block in with_mixin'
 /Applications/Adobe Dreamweaver 2020/Adobe Dreamweaver 2020.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
@@ -65,4 +65,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'with-translucent-border'.\A         on line 14 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/order-summary/style.scss, in `with-translucent-border'\A         from line 14 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/order-summary/style.scss\A \A 9: 	display: table;\A 10: 	width: 100%;\A 11: }\A 12: \A 13: .wc-block-components-order-summary-item {\A 14: 	@include with-translucent-border(0 0 1px);\A 15: 	display: table-row;\A 16: 	padding-bottom: 1px;\A 17: 	width: 100%;\A 18: \A 19: 	&:last-child {"; }
+  content: "Error: Undefined mixin 'with-translucent-border'.\A         on line 14 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/upgrade/woocommerce.4.5.2-vRiSMH/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/order-summary/style.scss, in `with-translucent-border'\A         from line 14 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/upgrade/woocommerce.4.5.2-vRiSMH/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/order-summary/style.scss\A \A 9: 	display: table;\A 10: 	width: 100%;\A 11: }\A 12: \A 13: .wc-block-components-order-summary-item {\A 14: 	@include with-translucent-border(0 0 1px);\A 15: 	display: table-row;\A 16: 	padding-bottom: 1px;\A 17: 	width: 100%;\A 18: \A 19: 	&:last-child {"; }

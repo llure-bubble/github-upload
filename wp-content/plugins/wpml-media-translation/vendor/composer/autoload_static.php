@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitf23f6eb7f8fb68fb9ccca376325864fe
+class ComposerStaticInit19351efcf90e309836a51d6a0d3662a5
 {
     public static $classMap = array (
         'WPML_Cache_Directory' => __DIR__ . '/..' . '/wpml-shared/wpml-lib-cache/src/cache/class-wpml-cache-directory.php',
@@ -81,14 +81,12 @@ class ComposerStaticInitf23f6eb7f8fb68fb9ccca376325864fe
         'WPML_Media_Upgrade' => __DIR__ . '/../..' . '/inc/wpml-media-upgrade.class.php',
         'WPML_Media_Usage' => __DIR__ . '/../..' . '/classes/media-usage/class-wpml-media-usage.php',
         'WPML_Media_Usage_Factory' => __DIR__ . '/../..' . '/classes/media-usage/class-wpml-media-usage-factory.php',
-        'WPML_Media_Welcome_Notice' => __DIR__ . '/../..' . '/classes/menus/wpml-media-welcome-notice.php',
-        'WPML_Media_Welcome_Notice_Factory' => __DIR__ . '/../..' . '/classes/menus/wpml-media-welcome-notice-factory.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->classMap = ComposerStaticInitf23f6eb7f8fb68fb9ccca376325864fe::$classMap;
+            $loader->classMap = ComposerStaticInit19351efcf90e309836a51d6a0d3662a5::$classMap;
 
         }, null, ClassLoader::class);
     }

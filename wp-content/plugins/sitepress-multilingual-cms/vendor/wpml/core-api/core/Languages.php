@@ -79,6 +79,47 @@ class Languages {
 		} ) );
 
 	}
+
+	/**
+	 * Curried :: string → bool
+	 * Determine if the language is Right to Left
+	 *
+	 * @param string|null $code
+	 *
+	 * @return callable|bool
+	 */
+	public static function isRtl( $code = null ) {
+		$isRtl = function ( $code ) {
+			global $sitepress;
+
+			return $sitepress->is_rtl( $code );
+		};
+
+		return call_user_func_array( curryN( 1, $isRtl ), func_get_args() );
+	}
+
+	/**
+	 * Curried :: [code => lang] → [code => lang]
+	 *
+	 * Adds language direction, right to left, to the languages data
+	 *
+	 * @param array|null $langs
+	 *
+	 * @return callable|array
+	 */
+	public static function withRtl( $langs = null ) {
+		$withRtl = function ( $langs ) {
+			$addRtl = function ( $lang, $code ) {
+				$lang['rtl'] = self::isRtl( $code );
+
+				return $lang;
+			};
+
+			return Fns::map( $addRtl, $langs );
+		};
+
+		return call_user_func_array( curryN( 1, $withRtl ), func_get_args() );
+	}
 }
 
 Languages::init();

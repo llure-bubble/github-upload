@@ -4,7 +4,9 @@ use function WPML\Container\make;
 
 class WPML_PB_Factory {
 
+	/** @var wpdb */
 	private $wpdb;
+	/** @var SitePress */
 	private $sitepress;
 	private $string_translations = array();
 

@@ -8,6 +8,8 @@
  *
  */
 
+use \WPML\UrlHandling\WPLoginUrlConverter;
+
 class WPML_URL_Converter {
 	/**
 	 * @var IWPML_URL_Converter_Strategy
@@ -167,6 +169,15 @@ class WPML_URL_Converter {
 			$language = $this->get_strategy()->get_lang_from_url_string( $url );
 		}
 
+		/**
+		 * Filters language code fetched from the current URL and allows to rewrite
+		 * the language to set on front-end
+		 *
+		 * @param string $language language fetched from the current URL
+		 * @param string $url current URL.
+		 */
+		$language = apply_filters( 'wpml_get_language_from_url', $language, $url );
+
 		return $this->get_strategy()->validate_language( $language, $url );
 	}
 
@@ -178,6 +189,17 @@ class WPML_URL_Converter {
 	 */
 	public function get_home_url_relative( $url, $language ) {
 		return $this->get_strategy()->get_home_url_relative( $url, $language );
+	}
+
+	/**
+	 * @param SitePress $sitepress
+	 *
+	 * @return WPLoginUrlConverter|null
+	 */
+	public function get_wp_login_url_converter( $sitepress ) {
+		return $this->strategy->use_wp_login_url_converter()
+			? new WPLoginUrlConverter( $sitepress, $this )
+			: null;
 	}
 
 	/**

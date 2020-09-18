@@ -3,6 +3,8 @@ require WPML_PLUGIN_PATH . '/menu/post-menus/post-edit-screen/wpml-sync-custom-f
 
 class WPML_Admin_Scripts_Setup extends WPML_Full_Translation_API {
 
+    const PRIORITY_ENQUEUE_SCRIPTS = 10;
+
 	/** @var string $page */
 	private $page;
 
@@ -20,7 +22,7 @@ class WPML_Admin_Scripts_Setup extends WPML_Full_Translation_API {
 
 	public function add_admin_hooks() {
 		add_action( 'admin_print_scripts', array( $this, 'wpml_js_scripts_setup' ) );
-		add_action( 'admin_print_styles', array( $this, 'wpml_css_setup' ) );
+		add_action( 'admin_enqueue_scripts', array( $this, 'wpml_css_setup' ), self::PRIORITY_ENQUEUE_SCRIPTS );
 	}
 
 	public function register_styles() {

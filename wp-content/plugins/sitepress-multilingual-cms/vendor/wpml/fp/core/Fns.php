@@ -39,6 +39,29 @@ use WPML\Collect\Support\Traits\Macroable;
  * @method static callable|mixed identity( mixed ...$data ) - Curried :: a->a
  * @method static callable|mixed tap( callable  ...$fn, mixed ...$data ) - Curried :: fn->data->data
  * @method static callable|mixed reduce( ...$fn, ...$initial, ...$target ) - Curried :: ( ( a, b ) → a ) → a → [b] → a
+ * @method static callable|mixed reduceRight( ...$fn, ...$initial, ...$target ) - Curried :: ( ( a, b ) → a ) → a → [b] → a
+ *
+ * Takes a function, an initial value and an array and returns the result.
+ *
+ * The function receives two values, the accumulator and the current value, and should return a result.
+ *
+ * The array values are passed to the function in the reverse order.
+ *
+ * ```php
+ * $numbers = [ 1, 2, 3, 4, 5, 8, 19 ];
+ *
+ * $append = function( $acc, $val ) {
+ *    $acc[] = $val;
+ *    return $acc;
+ * };
+ *
+ * $reducer = Fns::reduceRight( $append, [] );
+ * $result = $reducer( $numbers ); // [ 19, 8, 5, 4, 3, 2, 1 ]
+ *
+ * // Works on collections too.
+ * $result = $reducer( wpml_collect( $numbers ) ); // [ 19, 8, 5, 4, 3, 2, 1 ]
+ * ```
+ *
  * @method static callable|mixed filter( ...$predicate, ...$target ) - Curried :: ( a → bool ) → [a] → [a]
  * @method static callable|mixed reject( ...$predicate, ...$target ) - Curried :: ( a → bool ) → [a] → [a]
  * @method static callable|mixed value( mixed ...$data ) - Curried :: a|( *→a ) → a
@@ -89,7 +112,7 @@ use WPML\Collect\Support\Traits\Macroable;
  * @method static callable|mixed liftA3( ...$fn, ...$monadA, ...$monadB, ...$monadC ) - Curried :: ( a → b → c → d ) → m a → m b → m c → m d
  * @method static callable|mixed liftN( ...$n, ...$fn, ...$monad ) - Curried :: Number->( ( * ) → a ) → ( *m ) → m a
  *
- * @method static callable|mixed until(...$predicate, ...$fns) - Curried :: ( b → bool ) → [ ( a → b) ] → a → b
+ * @method static callable|mixed until( ...$predicate, ...$fns ) - Curried :: ( b → bool ) → [( a → b )] → a → b
  *
  * Executes consecutive functions until their $predicate($fn(...$args)) is true. When a result fulfils predicate then it is returned.
  *
@@ -154,6 +177,16 @@ class Fns {
 			}
 			if ( is_array( $target ) ) {
 				return array_reduce( $target, $fn, $initial );
+			}
+			throw( new \InvalidArgumentException( 'target should be an object with reduce method or an array' ) );
+		} ) );
+
+		self::macro( 'reduceRight', curryN( 3, function ( $fn, $initial, $target ) {
+			if ( is_object( $target ) ) {
+				return $target->reverse()->reduce( $fn, $initial );
+			}
+			if ( is_array( $target ) ) {
+				return array_reduce( array_reverse( $target ), $fn, $initial );
 			}
 			throw( new \InvalidArgumentException( 'target should be an object with reduce method or an array' ) );
 		} ) );
@@ -246,10 +279,6 @@ class Fns {
 		self::macro( 'isNothing', curryN( 1, function ( $m ) {
 			return $m instanceof Nothing;
 		} ) );
-
-		self::macro( 'T', Fns::always( true ) );
-
-		self::macro( 'F', Fns::always( false ) );
 
 		self::macro( 'safe', curryN( 1, function ( $fn ) {
 			return pipe( $fn, Maybe::fromNullable() );
@@ -373,6 +402,22 @@ class Fns {
 
 	public static function noop() {
 		return function () { };
+	}
+
+	/**
+	 * Curried function that transforms a Maybe into an Either.
+	 *
+	 * @param mixed|null $or
+	 * @param Maybe|null $maybe
+	 *
+	 * @return callable|Either
+	 */
+	public static function maybeToEither( $or = null, $maybe = null ) {
+		$toEither = function ( $or, Maybe $maybe ) {
+			return self::isJust( $maybe ) ? Either::right( $maybe->getOrElse( null ) ) : Either::left( $or );
+		};
+
+		return call_user_func_array( curryN( 2, $toEither ), func_get_args() );
 	}
 }
 

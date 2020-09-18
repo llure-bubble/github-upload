@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$gap".
-        on line 4 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/payment-method-icons/style.scss
+        on line 4 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/upgrade/woocommerce.4.5.2-vRiSMH/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/payment-method-icons/style.scss
 
 1: .wc-block-components-payment-method-icons {
 2: 	display: block;
@@ -13,7 +13,7 @@ Error: Undefined variable: "$gap".
 9: 		padding: 0;
 
 Backtrace:
-/Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/payment-method-icons/style.scss:4
+/Users/BUBBLE07/Sites/www.healthy.local/wp-content/upgrade/woocommerce.4.5.2-vRiSMH/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/payment-method-icons/style.scss:4
 /Applications/Adobe Dreamweaver 2020/Adobe Dreamweaver 2020.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Applications/Adobe Dreamweaver 2020/Adobe Dreamweaver 2020.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
 /Applications/Adobe Dreamweaver 2020/Adobe Dreamweaver 2020.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/script/tree/operation.rb:67:in `_perform'
@@ -63,4 +63,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$gap\".\A         on line 4 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/payment-method-icons/style.scss\A \A 1: .wc-block-components-payment-method-icons {\A 2: 	display: block;\A 3: 	text-align: center;\A 4: 	margin: 0 0 #{$gap - 2px};\A 5: \A 6: 	.wc-block-components-payment-method-icon {\A 7: 		display: inline-block;\A 8: 		margin: 0 4px 2px;\A 9: 		padding: 0;"; }
+  content: "Error: Undefined variable: \"$gap\".\A         on line 4 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/upgrade/woocommerce.4.5.2-vRiSMH/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/payment-method-icons/style.scss\A \A 1: .wc-block-components-payment-method-icons {\A 2: 	display: block;\A 3: 	text-align: center;\A 4: 	margin: 0 0 #{$gap - 2px};\A 5: \A 6: 	.wc-block-components-payment-method-icon {\A 7: 		display: inline-block;\A 8: 		margin: 0 4px 2px;\A 9: 		padding: 0;"; }

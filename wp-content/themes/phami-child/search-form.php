@@ -14,7 +14,7 @@
 		$class_ajax_search = "ajax-search";
 	}
 ?>
-<form role="search" method="get" class="search-from hidden-xs hidden-sm <?php //echo esc_attr($class_ajax_search); ?>" action="<?php echo esc_url(home_url( '/' )); ?>" data-admin="<?php echo admin_url( 'admin-ajax.php', 'phami' ); ?>" data-noresult="<?php echo esc_html__("No Result","phami") ; ?>" data-limit="<?php echo esc_attr($limit_ajax_search); ?>">
+<form role="search" method="get" autocomplete="off" class="search-from hidden-xs hidden-sm <?php echo esc_attr($class_ajax_search); ?>" action="<?php echo esc_url(home_url( '/' )); ?>" data-admin="<?php echo admin_url( 'admin-ajax.php', 'phami' ); ?>" data-noresult="<?php echo esc_html__("No Result","phami") ; ?>" data-limit="<?php echo esc_attr($limit_ajax_search); ?>">
 	<div class="search-box">
 		<input type="text" value="<?php echo get_search_query(); ?>" name="s" id="ss" class="input-search s" placeholder="<?php echo esc_attr__( 'Search products...', 'phami' ); ?>" />
 		<ul class="result-search-products">

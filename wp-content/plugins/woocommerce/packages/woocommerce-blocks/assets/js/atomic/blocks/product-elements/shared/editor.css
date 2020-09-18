@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$gap".
-        on line 9 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/shared/editor.scss
+        on line 9 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/upgrade/woocommerce.4.5.2-vRiSMH/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/shared/editor.scss
 
 4: .wc-atomic-blocks-product__edit-card {
 5: 	padding: 16px;
@@ -12,7 +12,7 @@ Error: Undefined variable: "$gap".
 11: }
 
 Backtrace:
-/Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/shared/editor.scss:9
+/Users/BUBBLE07/Sites/www.healthy.local/wp-content/upgrade/woocommerce.4.5.2-vRiSMH/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/shared/editor.scss:9
 /Applications/Adobe Dreamweaver 2020/Adobe Dreamweaver 2020.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Applications/Adobe Dreamweaver 2020/Adobe Dreamweaver 2020.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
 /Applications/Adobe Dreamweaver 2020/Adobe Dreamweaver 2020.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/script/tree/list_literal.rb:75:in `block in _perform'
@@ -73,4 +73,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$gap\".\A         on line 9 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/shared/editor.scss\A \A 4: .wc-atomic-blocks-product__edit-card {\A 5: 	padding: 16px;\A 6: 	border-top: 1px solid #e2e4e7;\A 7: \A 8: 	.wc-atomic-blocks-product__edit-card-title {\A 9: 		margin: 0 0 $gap;\A 10: 	}\A 11: }"; }
+  content: "Error: Undefined variable: \"$gap\".\A         on line 9 of /Users/BUBBLE07/Sites/www.healthy.local/wp-content/upgrade/woocommerce.4.5.2-vRiSMH/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/shared/editor.scss\A \A 4: .wc-atomic-blocks-product__edit-card {\A 5: 	padding: 16px;\A 6: 	border-top: 1px solid #e2e4e7;\A 7: \A 8: 	.wc-atomic-blocks-product__edit-card-title {\A 9: 		margin: 0 0 $gap;\A 10: 	}\A 11: }"; }
